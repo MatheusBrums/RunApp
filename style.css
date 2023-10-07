@@ -1,4 +1,16 @@
-main{
-    max-height: 575px;
+.main{
+    height: 415px;
     overflow: auto;
+}
+.main::-webkit-scrollbar {
+    display: none;
+  }
+@media screen and (min-width: 1000px) {
+    .ww{
+        width: 800px;
+        
+    }
+    .wi{
+        width: 25% !important;
+    }
 }
