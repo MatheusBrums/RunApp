@@ -23,3 +23,14 @@
         width: 25% !important;
     }
 }
+@media screen and (max-height: 750px){
+    .main{
+        height: 290px;
+    }
+}
+@media screen and (min-height: 750px) and (max-height: 860px){
+    .main{
+        
+        height: 315px;
+    }
+}
