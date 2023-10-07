@@ -45,7 +45,7 @@ function success(pos) {
     if(!speed){
         speed = 0
     }else{
-        speed = speed * 3.6
+        speed = floor(speed * 3.6)
     }
     console.log("Your current position is:");
     console.log(`Latitude : ${crd.latitude}`);
