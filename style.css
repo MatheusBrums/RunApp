@@ -1,9 +1,17 @@
+main{
+
+}
+
+.bb{
+    background-image: linear-gradient(to bottom, rgb(179, 184, 255), rgb(72, 72, 255));
+}
 .main{
-    height: 338px;
+    height: 438px;
     overflow: auto;
     box-shadow: inset 0px 0px 6px 3px rgba(0, 0, 0, 0.411);
     padding: 10px;
     border-radius: 10px;
+    background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.200), rgba(0, 0, 0, 0.200));
 }
 .main::-webkit-scrollbar {
     display: none;
@@ -30,7 +38,7 @@
 }
 @media screen and (min-height: 750px) and (max-height: 860px){
     .main{
-        
-        height: 315px;
+        background-color: aqua;
+        height: 355px;
     }
 }

@@ -33,20 +33,20 @@ setInterval(addTime, 1000)
 
 //Executando api para pegar a velocidade do player
 let speedPage = document.querySelector('#speedRun')
+let runIco = document.querySelector('.runIco')
 const options = {
     enableHighAccuracy: true,
     timeout: 5000,
     maximumAge: 0,
 };
-
+console.log(runIco);
 function success(pos) {
     const crd = pos.coords;
-    let speed = crd.speed
-    if(!speed){
-        speed = 0
+    let speed = crd.speed?(speed * 3.6).toFixed(0):0
+    if(speed == 0){
+        runIco.classList.add('d-none')
     }else{
-        speed = (speed * 3.6).toFixed(0)
-       
+        runIco.classList.add('d-inline-block')
     }
     console.log("Your current position is:");
     console.log(`Latitude : ${crd.latitude}`);
