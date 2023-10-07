@@ -36,22 +36,17 @@ let speedPage = document.querySelector('#speedRun')
 let runIco = document.querySelector('.runIco')
 const options = {
     enableHighAccuracy: true,
-    timeout: 5000,
+    timeout: 500,
     maximumAge: 0,
 };
 function success(pos) {
     const crd = pos.coords;
     let speed = crd.speed?(speed * 3.6).toFixed(0):0
-    speed = 0
     if(speed == 0){
         runIco.classList.add('d-none')
-        console.log('1')
     }else{
         runIco.classList.add('d-inline-block')
-        console.log('2')
     }
-   
-    
     console.log("Your current position is:");
     console.log(`Latitude : ${crd.latitude}`);
     console.log(`Longitude: ${crd.longitude}`);
